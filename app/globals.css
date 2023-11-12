@@ -42,7 +42,7 @@ body {
   }
 
   .primary-gradient {
-    background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+    background: linear-gradient(129deg, #16a34a 0%, #4ade80 100%);
   }
 
   .dark-gradient {
@@ -76,7 +76,7 @@ body {
 }
 
 .primary-text-gradient {
-  background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+  background: linear-gradient(129deg, #166534 0%, #86efac 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -121,7 +121,7 @@ code {
   -webkit-hyphens: auto;
   hyphens: auto;
   padding: 2px;
-  color: #ff7000 !important;
+  color: #22c55e !important;
 }
 .markdown pre {
   display: grid;
@@ -136,7 +136,7 @@ code {
 /* Markdown End */
 /* Clerk */
 .cl-internal-b3fm6y {
-  background: linear-gradient(129deg, #ff7000 0%, #e2995f 100%);
+  background: linear-gradient(129deg, #22c55e 0%, #86efac 100%);
 }
 
 .hash-span {

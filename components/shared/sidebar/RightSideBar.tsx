@@ -31,11 +31,11 @@ const RightSideBar = () => {
   ];
 
   const popularTags = [
-    { _id: 1, name: 'Quranic Studies', totalQuestions: 120 },
-    { _id: 2, name: 'Islamic History', totalQuestions: 95 },
-    { _id: 3, name: 'Halal Lifestyle', totalQuestions: 78 },
-    { _id: 4, name: 'Islamic Jurisprudence', totalQuestions: 103 },
-    { _id: 5, name: 'Prophetic Traditions', totalQuestions: 89 },
+    { _id: '1', name: 'Quranic Studies', totalQuestions: 120 },
+    { _id: '2', name: 'Islamic History', totalQuestions: 95 },
+    { _id: '3', name: 'Halal Lifestyle', totalQuestions: 78 },
+    { _id: '4', name: 'Islamic Jurisprudence', totalQuestions: 103 },
+    { _id: '5', name: 'Prophetic Traditions', totalQuestions: 89 },
   ];
   return (
     <section className='custom-scrollbar background-light900_dark200 light-border sticky right-0 top-0 flex h-screen w-[350px] flex-col gap-6 overflow-y-auto border-l p-6 pt-36 shadow-light-300 dark:shadow-none max-xl:hidden'>

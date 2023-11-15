@@ -23,6 +23,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { formSchema } from '@/lib/formValidation';
+import { createQuestion } from '@/lib/actions/question.action';
 
 const type: any = 'create';
 
@@ -41,11 +42,12 @@ const Question = () => {
   });
 
   // 2. Define a submit handler.
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
 
     try {
       // make an async call to your API -> create a question
+      await createQuestion({});
       //   contain all form data
       //   Navigate to home page
     } catch (error) {
@@ -142,6 +144,8 @@ const Question = () => {
                   // @ts-ignore
                   onInit={(evt, editor) => (editorRef.current = editor)}
                   initialValue=''
+                  onBlur={field.onBlur}
+                  onEditorChange={(content) => field.onChange(content)}
                   init={{
                     height: 500,
                     menubar: false,
@@ -225,7 +229,7 @@ const Question = () => {
             disabled={isSubmitting}
           >
             {isSubmitting ? (
-              <>{type === 'edit' ? 'Editing...' : 'Posting'}</>
+              <>{type === 'edit' ? 'Editing...' : 'Posting...'}</>
             ) : (
               <>{type === 'edit' ? 'Editing...' : 'Ask a question'}</>
             )}
